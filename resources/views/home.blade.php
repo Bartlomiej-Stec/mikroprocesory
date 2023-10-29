@@ -139,14 +139,6 @@
                             </tr>
                         </thead>
                         <tbody id="results">
-                            <tr>
-                                <td>1,001</td>
-                                <td>random</td>
-                                <td>data</td>
-                                <td>placeholder</td>
-                                <td>Tak</td>
-                            </tr>
-
                         </tbody>
                     </table>
                 </div>
