@@ -16,4 +16,6 @@ class HistoricalData extends Model
         'dew_temperature',
         'fan_active'
     ];
+
+    protected $hidden = ['user_id', 'id'];
 }

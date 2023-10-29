@@ -15,4 +15,6 @@ class Settings extends Model
         'frequency_seconds',
         'fan_active_under_value'
     ];
+
+    protected $hidden = ['user_id'];
 }

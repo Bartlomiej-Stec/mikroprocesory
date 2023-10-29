@@ -22,5 +22,5 @@ Auth::routes(['reset' => false]);
 Route::middleware(['auth'])->group(function () {
     Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
     Route::post('/save/settings', [App\Http\Controllers\HomeController::class, 'saveSettings'])->name('save.settings');
+    Route::get('/historical-data', [App\Http\Controllers\HomeController::class, 'getData'])->name('get.data');
 });
-
