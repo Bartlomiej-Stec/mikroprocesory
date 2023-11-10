@@ -6,8 +6,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="">
-    <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
-    <meta name="generator" content="Hugo 0.118.2">
+    <meta name="author" content="Bartłomiej Stec">
     <meta name="csrf-token" content="{{ csrf_token() }}">
     <title>Panel zarządzania</title>
 
@@ -64,7 +63,7 @@
                         <form class="row g-3" method="POST" action="{{ route('save.settings') }}">
                             @csrf
                             <div class="col-auto">
-                                <label for="fan_active_under_value">Próg aktywacji czujnika w %</label>
+                                <label for="fan_active_under_value">Próg aktywacji wiatraka w %</label>
                                 <input type="number" class="form-control" id="fan_active_under_value"
                                     name="fan_active_under_value"
                                     value="{{ auth()->user()->settings->fan_active_under_value }}"

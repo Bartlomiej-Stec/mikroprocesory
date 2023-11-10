@@ -15,7 +15,7 @@ return new class extends Migration
             $table->unsignedBigInteger('user_id')->primary();
             $table->foreign('user_id')->references('id')->on('users')->onDelete('cascade');
             $table->unsignedInteger('frequency_seconds')->default(600);
-            $table->unsignedInteger('fan_active_under_value')->default(0);
+            $table->unsignedInteger('fan_active_under_value')->default(15);
             $table->timestamps();
         });
     }
